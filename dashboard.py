@@ -215,10 +215,6 @@ with tab3:
     ax.set_title('Predicted Bike Rentals for Next 7 Days')
     ax.legend()
     st.pyplot(fig)
-    # Displaying the forecast results in a table
-    st.write("Forecast for Next 7 Days:")
-    forecast_df = pd.DataFrame(predictions, columns=["Forecast"])
-    st.table(forecast_df)
     with st.expander("Conclusion of the prediction"):
         st.write(
           """ From the prediction, it is found that the total bicycle rental continues to increase every day for the next 7 days."""          )
